@@ -10,14 +10,21 @@ class eleitor{
         let idade = this.idade 
 
         if(idade < 16){
-            console.log("Abaixo da idade minima ara votar")}
+            console.log("Abaixo da idade minima ara votar")
+            return"Abaixo da idade minima ara votar"
+        }
         else if((idade>=16)&&(idade<18)){
             console.log("idade onde o voto é facultativo")
+            return "idade onde o voto é facultativo"
         }
         else if((idade >=18)&&(idade<=70)){
-            console.log("Idade onde o voto é obrigatório")}
+            console.log("Idade onde o voto é obrigatório")
+            return "Idade onde o voto é obrigatório"
+        }
         else if (idade>70){
-            console.log("idade onde o voto é facultativo")}
+            console.log("idade onde o voto é facultativo")
+            return "idade onde o voto é facultativo"
+        }
 
         }
         }

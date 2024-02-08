@@ -9,15 +9,20 @@ verificar.addEventListener('click', ()=>{
 
     console.log("dados do formulario: ", nome,idade,titulo)
 
-    const cidadao = new eleitor
+    const cidadao = new eleitor()
 
-    cidadao.nome
-    cidadao.idade
-    cidadao.titulo
+    cidadao.nome =nome
+    cidadao.idade =idade
+    cidadao.titulo =titulo
 
     console.log("instançia do objeto: ", cidadao)
 
-    cidadao.verificaVoto
-}
+    let mensagem = cidadao.verificaVoto()
 
-)
+        resposta.innerHTML =''
+        resposta.innerHTML +=`O eleitor ${cidadao.nome} <br>   `
+        resposta.innerHTML +=`tem ${cidadao.idade} anos de idade <br>   `
+        resposta.innerHTML +=mensagem
+        resposta.style.color ="firebrick"
+        resposta.style.fontSize ="1.4rem"
+})
