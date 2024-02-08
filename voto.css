@@ -1,0 +1,25 @@
+body{
+    background-color: pink;
+    color: black;
+    font-size: 1.25rem ;
+    font-weight: bold;
+
+}
+
+input, button{
+    background-color: black;
+    color: white;
+    border-radius: 8px ;
+}
+
+input, placeholder{
+    color: darkturquoise;
+}
+
+button:hover{
+    background-color:darkcyan;
+}
+
+button{
+    cursor: pointer;
+}
