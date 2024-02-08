@@ -4,8 +4,8 @@ let nome = document.getElementById('nome').value
 
 verificar.addEventListener('click', ()=>{
     let nome = document.getElementById('nome').value
-    let idade = number (document.getElementById('idade').value)
-    let titulo = number (document.getElementById('titulo').value)
+    let idade = Number (document.getElementById('idade').value)
+    let titulo = Number (document.getElementById('titulo').value)
 
     console.log("dados do formulario: ", nome,idade,titulo)
 
@@ -16,5 +16,8 @@ verificar.addEventListener('click', ()=>{
     cidadao.titulo
 
     console.log("instançia do objeto: ", cidadao)
+
+    cidadao.verificaVoto
 }
+
 )
